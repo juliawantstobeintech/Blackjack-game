@@ -62,4 +62,8 @@ function newCard() {
         cards.push(card)
         renderGame()        
     }
+
+// Expose functions to global scope for HTML onclick
+window.startGame = startGame;
+window.newCard = newCard;
 }
